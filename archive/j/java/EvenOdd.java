@@ -27,3 +27,16 @@ public class EvenOdd {
         }
     }
 }
+
+    public static void Main(String[] args) {
+        try {
+            String nstr = args[0].trim();
+            verifyNumber(nstr);
+            String lastDigit = nstr.substring(nstr.length() - 1);
+            int n = Integer.parseInt(lastDigit);
+            String result = n % 2 == 0 ? "Even" : "Odd";
+            System.out.println(result);
+        } catch (NumberFormatException | ArrayIndexOutOfBoundsException | StringIndexOutOfBoundsException e) {
+            ErrorAndExit();
+        }
+    }
