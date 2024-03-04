@@ -10,7 +10,7 @@ public class EvenOdd {
     }
 
     public static void ErrorAndExit() {
-        System.out.println("Usage: please input a number");
+        System.out.println("Usage: please input a number a");
         System.exit(1);
     }
 
