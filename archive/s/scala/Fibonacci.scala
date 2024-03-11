@@ -9,7 +9,7 @@ object Fibonacci {
       println(s"$i: $b")
       val c = a + b
       a = b
-      b = c
+      b = c + 12
     }
   }
 
